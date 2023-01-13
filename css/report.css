@@ -1,0 +1,47 @@
+.page1, .page2,.page3,.page4,.page5{
+       
+    position: center;
+    
+   }
+
+.page1{
+    min-height: 520px;
+    margin: 0 10%;
+    }
+  .page2{
+    min-height: 545px;
+  }
+  .page3{
+    min-height: 545px;
+    
+  }
+  .page4{
+    min-height: 545px;
+    
+  }
+  .page5{
+    min-height: 545px;
+    
+  }
+  .section{
+    text-align: center;
+    padding: 100px 60px;
+    font-size: 23px;
+  }
+  .first{
+    background-color:rgb(255, 255, 255);
+    color: #111;/* 这里要淡一点*/
+    margin-top: 0px;
+    text-align: center;
+    padding: 60px 60px;
+    font-size: 20px;
+  }
+  
+  .section-dark{
+   background-color:rgb(202, 233, 220);
+    color: #010000;
+  }
+  .section-light{
+    background-color:rgb(255, 245, 232);
+    color: #111;
+  }
