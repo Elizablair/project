@@ -1,0 +1,160 @@
+*{
+	margin: 10;
+	padding: 10;
+	box-sizing: border-box;
+	font-family: 'ancient';
+}
+@font-face {
+	font-family: 'ancient';
+	src: url(word.ttf);
+  }
+
+h1{ 
+	font-size: 72px;
+	color:rgb(174, 115, 82);
+	text-shadow: 2px 2px rgb(227, 221, 209);
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+html{/* 页面背景 */
+	font-size: 7px;/* 整体页面大小 */
+	background: url(https://cdn.acautomaton.com/cdn/static/txy/web/huaniao.jpg) no-repeat 100% fixed;
+	background-size: cover;
+}
+
+html:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	backdrop-filter:blur(0.4rem);
+	/* background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) no-repeat; */
+}
+
+    
+
+
+.whole{
+	display: flex;
+	overflow: hidden;
+	width: 95rem;
+	height: 63.5em;
+	/* background-color: rgba(255,255,255,80%); */
+	border-radius: 1.5rem;
+	margin: 6% auto;
+	box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 10%);
+}
+
+.whole .left{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	background-color: skyblue;
+	background: url(https://cdn.acautomaton.com/cdn/static/txy/web/huaxiang.jpg) no-repeat ;
+}
+.whole .medium{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	background-color: skyblue;
+	background: url(https://cdn.acautomaton.com/cdn/static/txy/web/guan.jpg) no-repeat ;
+}
+.whole .left::before{/* 插入左侧图片 */
+	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	opacity: 80%;
+	z-index: -1;
+	backdrop-filter:blur(0.8rem);
+}
+
+.whole .right{
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.whole .right h4{
+	color: rgb(248, 195, 114);
+	font-size: 4.6rem;
+	margin-top: 4.6rem;
+}
+
+.whole .right form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.whole .right input {/* 输入框设定 */
+	outline: none;
+	width: 95%;
+	line-height: 5.1rem;
+	font-size: 3rem;
+	margin-top: 1rem;
+	padding: 0 0 0 1.6rem;
+	border: none;
+	border-bottom: 1px solid rgb(241, 196, 129);
+	color: rgb(27, 26, 24);
+	
+}
+.whole .right p{
+	color:rgb(194, 141, 56);
+	font-size: 2.4rem;
+	margin-top: 0rem;
+
+}
+
+.right form .acc:focus{ 
+	outline: none;
+	color:#FF7F50;
+	
+	padding: 0 0 0 1.6rem;
+}
+
+ .submit {/* 登入的按钮 */
+	width: 230px;
+	line-height: 50px;
+	background: linear-gradient(120deg, #cdab90 0%, #edd594 100%);
+	font-size: 1.4rem;
+	border: none;
+	border-radius: 4rem;
+	margin: 4rem 0 0 56%;
+	transform: translateX(-50%);
+	color: rgb(172, 147, 112);
+	border-bottom: 0.5px solid rgb(241, 196, 129);
+	transition: 0.6s ease-in-out;
+
+}
+   .submit a{
+	color: rgb(194, 157, 105);
+	font-size: 25px;
+	margin:2cm 2cm 2cm 2.26cm;
+   }
+
+
+.right .down{
+	display: flex;
+	justify-content: space-between;
+    width: 70%;
+}
+
+.right .down a{/* 注册 忘记 */
+	font-size: 1.8rem;
+	margin-top: 3.5rem;
+	padding: 1rem 2rem;
+	color: #666;
+}
+
+.right .down a:hover{
+	color: rgb(144,129,241);
+}
